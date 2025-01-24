@@ -1,0 +1,18 @@
+.text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.discover {
+    background-color: rgb(196, 42, 68);
+    display: flex;
+}
+
+.join {
+    background-color: yellow;
+    display: flex;
+}
+
+.soundWaveLogo{
+    display: flex;
+}
