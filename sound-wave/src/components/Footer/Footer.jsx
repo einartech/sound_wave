@@ -1,0 +1,16 @@
+import styles from './Footer.module.css'
+import twitterImg from '../../assets/images/twitter.svg'
+import facebookImg from '../../assets/images/facebook.svg'
+
+export default function Footer() {
+  return (
+    <footer className={styles.footerContainer}>
+        <p className={styles.footerFont}>About Us</p>
+        <p className={styles.footerFont}>Contact</p>
+        <img className={styles.footerImg} src={twitterImg}/>
+        <p className={styles.footerSocials}>Twitter</p>
+        <img className={styles.footerImg} src={facebookImg}/>
+        <p className={styles.footerSocials}>Facebook</p>
+    </footer>
+  )
+}

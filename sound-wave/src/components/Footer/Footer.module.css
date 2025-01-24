@@ -1,0 +1,28 @@
+.footerContainer{
+    display: inline-flex;
+    position: fixed;
+    bottom: 0;
+    background-color: #202027;
+    width: 100%;
+}
+.footerFont{
+    color: #FFFFFF;
+    display: flex;
+    background: none;
+    size: 1.2rem;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.footerSocials{
+    color: #FFFFFF;
+    display: flex;
+    background: none;
+    size: 1.2rem;
+    font-weight: bold;
+}
+.footerImg{
+    color: #FFFFFF;
+    background: none;
+    size: 1.2rem;
+}
