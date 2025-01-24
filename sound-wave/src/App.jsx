@@ -3,14 +3,11 @@ import Router from "./components/Router/Router";
 
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     //Llamar Componentes Header, Main y Footer aqui
     <>
-      <Router />
       <h1>Component APP</h1>
     </>
   );
 }
-
-export default App;
