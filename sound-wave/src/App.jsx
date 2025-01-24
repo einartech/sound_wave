@@ -2,6 +2,7 @@ import Router from "./components/Router/Router";
 //Importar Componentes Header, Main y Footer aqui
 import Image from "./components/Image/Image";
 import Button from "./components/Button/Button";
+import Title from './components/Title/Title';
 
 //landingPageGirl & covers - Mover a Main cuando este terminado
 import landingPageGirl from "./assets/images/landing-page-girl.png";
@@ -29,6 +30,9 @@ export default function App() {
       />
       <Button type="button" value="Boton 1" />
       <Button type="button" value="Boton 2" />
+      <Title text ="main title"/>
+      <Title text ="title 2"/>
+      <Title text ="title 3"/>
 
       <h3>A continuacion finalizan los componentes REUTILIZABLES de main</h3>
     </>
