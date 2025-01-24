@@ -1,11 +1,13 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import Router from "./components/Router/Router";
+//Importar Componentes Header, Main y Footer aqui
+
 import "./App.css";
 
 function App() {
   return (
+    //Llamar Componentes Header, Main y Footer aqui
     <>
+      <Router />
       <h1>Component APP</h1>
     </>
   );
