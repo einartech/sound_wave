@@ -1,10 +1,14 @@
-import style from "./Style.module.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import App from "../../App";
 
 export default function Router() {
   return (
-    <>
-      <h1 className={style.red}>Componente Router</h1>
-      <h1 className={style.blue}>Componente Router</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/discover" element={<App />} />
+        <Route path="/join" element={<App />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
