@@ -5,7 +5,7 @@ import React from 'react';
 import Image from "./components/Image/Image";
 import Button from "./components/Button/Button";
 import Title from './components/Title/Title';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from "./components/navbar/Navbar";
 
 //landingPageGirl & covers - Mover a Main cuando este terminado
 import landingPageGirl from "./assets/images/landing-page-girl.png";
