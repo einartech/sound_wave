@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import logo from "../../assets/images/logo.png";
 
 const LogoContainer = styled.div`
     display: flex;
@@ -22,7 +23,7 @@ const LogoText = styled.span`
 const Logo = () => {
     return (
         <LogoContainer>
-            <LogoImage src="/sound-wave/src/assets/images/logo.png" alt="Sound Wave" />
+            <LogoImage src={logo} alt="Sound Wave" />
             <LogoText>Sound Wave</LogoText>
         </LogoContainer>
     );

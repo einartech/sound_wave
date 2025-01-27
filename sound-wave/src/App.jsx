@@ -5,6 +5,7 @@ import React from 'react';
 import Image from "./components/Image/Image";
 import Button from "./components/Button/Button";
 import Title from './components/Title/Title';
+import Navbar from './components/Navbar/Navbar';
 
 //landingPageGirl & covers - Mover a Main cuando este terminado
 import landingPageGirl from "./assets/images/landing-page-girl.png";
@@ -16,8 +17,8 @@ export default function App() {
   return (
     //Llamar Componentes Header, Main y Footer aqui
     <>
-      <h1>Component APP</h1>
-      <h3>A continuacion inician los componentes REUTILIZABLES de main</h3>
+
+      <Navbar />
       <Main />
       <Image
         img={landingPageGirl}
