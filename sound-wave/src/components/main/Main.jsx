@@ -1,5 +1,9 @@
 import React from "react";
 import style from "./Main.module.css";
+import Icons from "../Icons/Icons";
+import iconsImage from "../../assets/images/microphone.svg"
+import moreIcon from "../../assets/images/more.svg"
+import AlbumsIcon from "../../assets/images/albums.svg"
 
 function Main() {
   return (
@@ -10,8 +14,28 @@ function Main() {
       </section>
 
       <section className={style["right-section"]}>
-        <h2>Seccion Derecha</h2>
-        <p>Contenido de la sección derecha</p>
+        <Icons
+        img={iconsImage}
+        text= "Charts"
+        alt= "microphone icon"
+        width= "100px"
+        height= "100px"
+        />
+         <Icons
+        img={AlbumsIcon}
+        text= "Albums"
+        alt= "Albums icon"
+        width= "100px"
+        height= "100px"
+        />
+          <Icons
+        img={moreIcon}
+        text= "More"
+        alt= "more icon"
+        width= "100px"
+        height= "100px"
+        />
+       
       </section>
     </div>
   );
