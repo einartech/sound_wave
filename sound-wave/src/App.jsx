@@ -1,4 +1,6 @@
-import Router from "./components/Router/Router";
+import React from 'react';
+
+//import Router from './components/Router/Router';
 //Importar Componentes Header, Main y Footer aqui
 import Image from "./components/Image/Image";
 import Button from "./components/Button/Button";
@@ -7,8 +9,8 @@ import Title from './components/Title/Title';
 //landingPageGirl & covers - Mover a Main cuando este terminado
 import landingPageGirl from "./assets/images/landing-page-girl.png";
 import covers from "./assets/images/covers.jpg";
-
-import "./App.css";
+import Main from './components/main/Main';
+//import "./App.css";
 
 export default function App() {
   return (
@@ -16,6 +18,7 @@ export default function App() {
     <>
       <h1>Component APP</h1>
       <h3>A continuacion inician los componentes REUTILIZABLES de main</h3>
+      <Main />
       <Image
         img={landingPageGirl}
         alt="Una chica de pie con auriculares en la página de aterrizaje"
