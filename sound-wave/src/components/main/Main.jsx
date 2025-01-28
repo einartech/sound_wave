@@ -23,8 +23,8 @@ function Main() {
         <Image
           img={landingPageGirl}
           alt="Una chica de pie con auriculares en la página de aterrizaje"
-          width="50vh"
-          height="50vh"
+          width="30%"
+          height="65%"
         />
       </section>
     </div>
