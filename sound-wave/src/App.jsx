@@ -14,6 +14,7 @@ import Main from './components/main/Main';
 //import "./App.css";
 import Footer from "./components/Footer/Footer";
 
+
 export default function App() {
   return (
     //Llamar Componentes Header, Main y Footer aqui
@@ -39,7 +40,7 @@ export default function App() {
       <Title text ="main title"/>
       <Title text ="title 2"/>
       <Title text ="title 3"/>
-
+      
       <h3>A continuacion finalizan los componentes REUTILIZABLES de main</h3>
     </>
   );

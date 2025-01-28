@@ -1,9 +1,8 @@
-import styles from '../PlainText/PlainText.css'
+import styles from '../PlainText/PlainText.module.css'
 
-function PlainText({text}) {
+export default function PlainText({text}) {
   return (
     <p className ={styles.PlainText}> {text}</p>
   )
 }
 
-export default PlainText
