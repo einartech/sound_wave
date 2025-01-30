@@ -4,7 +4,10 @@ import cover from "../../assets/images/covers.jpg";
 import Icons from "../Icons/Icons";
 import H2Title from "../Title/Title";
 import PlainText from "../PlainText/PlainText";
-import iconsImage from "../../assets/images/microphone.svg";
+import iconsMic from "../../assets/images/microphone.svg";
+import iconsAlbum from "../../assets/images/albums.svg";
+import iconsMore from "../../assets/images/more.svg";
+
 
 const GirlSection = styled.section`
   display: flex;
@@ -98,22 +101,22 @@ const Discover = () => {
     <GirlSection>
       <LeftSection>
         <H2Title text="text" />
-        <PlainText text="text" />
         <Icons
-          img={iconsImage}
+          img={iconsMic}
           text="Charts"
           alt="microphone icon"
         />
         <Icons
-          img={iconsImage}
+          img={iconsAlbum}
           text="Albums"
-          alt="microphone icon"
+          alt="albums icon"
         />
         <Icons
-          img={iconsImage}
+          img={iconsMore}
           text="More"
-          alt="microphone icon"
+          alt="more icon"
         />
+        <PlainText text="text" />
       </LeftSection>
       <RightSection>
         <img src={cover} alt="Girl listening to music" />
