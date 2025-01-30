@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import girlImage from "../assets/images/landing-page-girl.png";
-
+import girlImage from "../../assets/images/landing-page-girl.png";
 
 const GirlSection = styled.section`
   display: flex;
@@ -65,7 +64,7 @@ const Circle3 = styled(Circle)`
     width: 150px;
     height: 150px;
     bottom: 0;
-    right:-20px;
+    right: -20px;
   }
 `;
 
@@ -97,10 +96,9 @@ const RightSection = styled.div`
   @media (max-width: 768px) {
     justify-content: flex-start;
     align-items: flex-start;
-    text-align: left;
     height: 50vh;
     padding-left: 1em;
-    margin-bottom:200px;
+    margin-bottom: 200px;
   }
 
   h1 {
@@ -110,9 +108,6 @@ const RightSection = styled.div`
 
     @media (max-width: 768px) {
       font-size: 2rem;
-      span {
-        display: block;
-      }
     }
   }
 
@@ -121,11 +116,8 @@ const RightSection = styled.div`
     margin-bottom: 20px;
 
     @media (max-width: 768px) {
-      font-size: 1rem;
-      span {
-        display: block;
-      }
-  }
+      font-size: 0.9rem;
+    }
   }
 `;
 
@@ -143,30 +135,23 @@ const ButtonFocus = styled.button`
   &:hover {
     background-color: #2180d8;
   }
-
-  @media (max-width: 768px) {
-    width: 100px;
-    padding: 5px 10px;
-    font-size: 0.8rem;
-  }
 `;
 
-const Home = () => {
+const Join = () => {
   return (
     <GirlSection>
       <Circle1 />
       <Circle2 />
       <Circle3 />
       <LeftSection>
-        <img src={girlImage} alt="Girl listening to music" />
+        <h1>JOIN THE FUN</h1>
       </LeftSection>
       <RightSection>
-        <h1>Feel The <span>Music</span></h1>
-        <p>Stream over 20 thousand songs<span>with one click</span></p>
+        <h1>Formulario aqui</h1>
         <ButtonFocus>Join Now</ButtonFocus>
       </RightSection>
     </GirlSection>
   );
 };
 
-export default Home;
+export default Join;

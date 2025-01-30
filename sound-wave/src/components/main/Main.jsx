@@ -1,3 +1,4 @@
+/*
 import React from "react";
 import style from "./Main.module.css";
 import H2Title from "../../components/title2/h2Title";
@@ -45,3 +46,4 @@ function Main() {
 }
 
 export default Main;
+*/
