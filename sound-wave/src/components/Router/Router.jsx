@@ -4,7 +4,6 @@ import Home from "../pageHome/Home";
 import Discover from "../pageDiscover/Discover";
 import Join from "../pageJoin/Join";
 import "../../../src/index.css";
-import Header from "../Header/Header";
 
 
 export default function Router() {

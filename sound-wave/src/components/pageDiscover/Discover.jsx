@@ -26,7 +26,7 @@ const LeftSection = styled.div`
   flex: 1;
   display: flex;
   align-items: flex-end;
-  justify-content: right;
+  justify-content: space-between;
   margin-right: 4.5em;
   height: 50%;
   width: 50%;
@@ -103,8 +103,16 @@ const Discover = () => {
           img={iconsImage}
           text="Charts"
           alt="microphone icon"
-          width="100px"
-          height="100px"
+        />
+        <Icons
+          img={iconsImage}
+          text="Albums"
+          alt="microphone icon"
+        />
+        <Icons
+          img={iconsImage}
+          text="More"
+          alt="microphone icon"
         />
       </LeftSection>
       <RightSection>
