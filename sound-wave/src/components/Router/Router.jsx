@@ -8,9 +8,9 @@ export default function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/home" element={<Home />} />
-        {/* <Route path="/discover" element={<Discover />} />
-        <Route path="/join" element={<Join />} /> */}
+        <Route path="/" element={<Home />} />
+        <Route path="/discover" element={<Discover />} />
+        <Route path="/join" element={<Join />} />
       </Routes>
     </BrowserRouter>
   );
