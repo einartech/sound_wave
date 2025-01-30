@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import girlImage from "../../assets/images/landing-page-girl.png";
 import Header from "../header/Header";
-import Footer from "../Footer/Footer";
 
 const GirlSection = styled.section`
   display: flex;
@@ -156,7 +155,6 @@ const Home = () => {
           <ButtonFocus>Join Now</ButtonFocus>
         </RightSection>
       </GirlSection>
-      <Footer />
     </>
   );
 };
