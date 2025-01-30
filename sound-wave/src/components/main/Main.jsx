@@ -26,6 +26,7 @@ function Main() {
          <Icons
         img={AlbumsIcon}
         text= "Albums"
+        
         alt= "Albums icon"
         width= "100px"
         height= "100px"
