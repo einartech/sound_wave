@@ -1,4 +1,4 @@
-import styles from '../PlainText/PlainText.module.css'
+import styles from './PlainText.module.css'
 
 export default function PlainText({text}) {
   return (
