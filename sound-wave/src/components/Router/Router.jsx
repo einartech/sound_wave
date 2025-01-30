@@ -1,13 +1,15 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import App from "../../App";
+import Home from "../pageHome/Home";
+import Discover from "../pageDiscover/Discover";
+import Join from "../pageJoin/Join";
 
 export default function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/discover" element={<App />} />
-        <Route path="/join" element={<App />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/discover" element={<Discover />} />
+        <Route path="/join" element={<Join />} />
       </Routes>
     </BrowserRouter>
   );

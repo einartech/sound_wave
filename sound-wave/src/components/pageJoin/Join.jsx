@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import girlImage from "../assets/images/landing-page-girl.png";
+import girlImage from "../../assets/images/landing-page-girl.png";
 
 const GirlSection = styled.section`
   display: flex;
@@ -144,11 +144,10 @@ const Join = () => {
       <Circle2 />
       <Circle3 />
       <LeftSection>
-        <img src={girlImage} alt="Girl listening to music" />
+        <h1>JOIN THE FUN</h1>
       </LeftSection>
       <RightSection>
-        <h1>Feel The Music</h1>
-        <p>Stream over 20 thousand songs with one click</p>
+        <h1>Formulario aqui</h1>
         <ButtonFocus>Join Now</ButtonFocus>
       </RightSection>
     </GirlSection>

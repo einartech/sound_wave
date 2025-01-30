@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import girlImage from "../../assets/images/landing-page-girl.png";
+import Header from "../header/Header";
+import Footer from "../Footer/Footer";
 
 const GirlSection = styled.section`
   display: flex;
@@ -139,19 +141,23 @@ const ButtonFocus = styled.button`
 
 const Home = () => {
   return (
-    <GirlSection>
-      <Circle1 />
-      <Circle2 />
-      <Circle3 />
-      <LeftSection>
-        <img src={girlImage} alt="Girl listening to music" />
-      </LeftSection>
-      <RightSection>
-        <h1>Feel The Music</h1>
-        <p>Stream over 20 thousand songs with one click</p>
-        <ButtonFocus>Join Now</ButtonFocus>
-      </RightSection>
-    </GirlSection>
+    <>
+      <Header />
+      <GirlSection>
+        <Circle1 />
+        <Circle2 />
+        <Circle3 />
+        <LeftSection>
+          <img src={girlImage} alt="Girl listening to music" />
+        </LeftSection>
+        <RightSection>
+          <h1>Feel The Music</h1>
+          <p>Stream over 20 thousand songs with one click</p>
+          <ButtonFocus>Join Now</ButtonFocus>
+        </RightSection>
+      </GirlSection>
+      <Footer />
+    </>
   );
 };
 

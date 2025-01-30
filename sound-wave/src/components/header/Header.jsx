@@ -15,11 +15,10 @@ const Header = styled.header`
 const Navbar = () => {
   return (
     <Header>
-      <Logo /> 
-      <Menu /> 
+      <Logo />
+      <Menu />
     </Header>
   );
 };
 
 export default Navbar;
-
