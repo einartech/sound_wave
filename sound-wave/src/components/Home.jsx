@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import girlImage from "../assets/images/landing-page-girl.png";
 
+
 const GirlSection = styled.section`
   display: flex;
   height: 100vh;
@@ -96,6 +97,7 @@ const RightSection = styled.div`
   @media (max-width: 768px) {
     justify-content: flex-start;
     align-items: flex-start;
+    text-align: left;
     height: 50vh;
     padding-left: 1em;
     margin-bottom:200px;
@@ -108,6 +110,9 @@ const RightSection = styled.div`
 
     @media (max-width: 768px) {
       font-size: 2rem;
+      span {
+        display: block;
+      }
     }
   }
 
@@ -116,8 +121,11 @@ const RightSection = styled.div`
     margin-bottom: 20px;
 
     @media (max-width: 768px) {
-      font-size: 0.9rem;
-    }
+      font-size: 1rem;
+      span {
+        display: block;
+      }
+  }
   }
 `;
 
@@ -135,6 +143,12 @@ const ButtonFocus = styled.button`
   &:hover {
     background-color: #2180d8;
   }
+
+  @media (max-width: 768px) {
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
 `;
 
 const Home = () => {
@@ -147,8 +161,8 @@ const Home = () => {
         <img src={girlImage} alt="Girl listening to music" />
       </LeftSection>
       <RightSection>
-        <h1>Feel The Music</h1>
-        <p>Stream over 20 thousand songs with one click</p>
+        <h1>Feel The <span>Music</span></h1>
+        <p>Stream over 20 thousand songs<span>with one click</span></p>
         <ButtonFocus>Join Now</ButtonFocus>
       </RightSection>
     </GirlSection>
