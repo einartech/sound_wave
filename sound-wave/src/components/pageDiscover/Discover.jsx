@@ -29,9 +29,9 @@ const LeftSection = styled.div`
   flex: 1;
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-right: 4.5em;
-  height: 50%;
+  /* height: 50%; */
   width: 50%;
 
   img {
@@ -100,6 +100,7 @@ const Discover = () => {
   return (
     <GirlSection>
       <LeftSection>
+        <div>
         <H2Title text="text" />
         <Icons
           img={iconsMic}
@@ -117,6 +118,7 @@ const Discover = () => {
           alt="more icon"
         />
         <PlainText text="text" />
+        </div>
       </LeftSection>
       <RightSection>
         <img src={cover} alt="Girl listening to music" />
