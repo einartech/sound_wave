@@ -44,7 +44,7 @@ HTML, CSS, JavaScript.
    ```
 
 
-## 📜 Collaboradores
+## 📜 Colaboradores
 Einar Sanchez, Alba Riera, Mariona Cuyàs, Eva Sisalli & Karisha Meléndez.
 
 ---
