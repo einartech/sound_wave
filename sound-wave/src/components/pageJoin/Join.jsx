@@ -64,7 +64,7 @@ const Circle3 = styled(Circle)`
     width: 150px;
     height: 150px;
     bottom: 0;
-    right:-20px;
+    right: -20px;
   }
 `;
 
@@ -98,7 +98,7 @@ const RightSection = styled.div`
     align-items: flex-start;
     height: 50vh;
     padding-left: 1em;
-    margin-bottom:200px;
+    margin-bottom: 200px;
   }
 
   h1 {
@@ -137,7 +137,7 @@ const ButtonFocus = styled.button`
   }
 `;
 
-const Home = () => {
+const Join = () => {
   return (
     <GirlSection>
       <Circle1 />
@@ -155,4 +155,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Join;
