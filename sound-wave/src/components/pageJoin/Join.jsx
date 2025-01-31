@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import girlImage from "../../assets/images/landing-page-girl.png";
+import Form from "../Form/Form"
 import Header from "../header/Header";
 import Footer from "../Footer/Footer";
 
@@ -132,15 +133,11 @@ const Join = () => {
         <Circle1 />
         <Circle2 />
         <h1>JOIN THE FUN</h1>
-
-        <LeftSection></LeftSection>
-        <RightSection>
-          <h1>Formulario aqui</h1>
-          <ButtonFocus>Join Now</ButtonFocus>
-        </RightSection>
-      </TitleSection>
-      <Footer />
-    </>
+      </LeftSection>
+      <RightSection>
+        <Form />
+      </RightSection>
+    </GirlSection>
   );
 };
 
