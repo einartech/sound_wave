@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import girlImage from "../../assets/images/landing-page-girl.png";
+import Header from "../header/Header";
+import Footer from "../Footer/Footer";
 
-const GirlSection = styled.section`
+const TitleSection = styled.section`
   display: flex;
   height: 100vh;
   color: white;
@@ -50,21 +52,6 @@ const Circle2 = styled(Circle)`
     height: 100px;
     top: 20px;
     left: 130px;
-  }
-`;
-
-const Circle3 = styled(Circle)`
-  width: 500px;
-  height: 500px;
-  background-color: #3457b21a;
-  bottom: -150px;
-  right: -150px;
-
-  @media (max-width: 768px) {
-    width: 150px;
-    height: 150px;
-    bottom: 0;
-    right: -20px;
   }
 `;
 
@@ -139,18 +126,21 @@ const ButtonFocus = styled.button`
 
 const Join = () => {
   return (
-    <GirlSection>
-      <Circle1 />
-      <Circle2 />
-      <Circle3 />
-      <LeftSection>
+    <>
+      <Header />
+      <TitleSection>
+        <Circle1 />
+        <Circle2 />
         <h1>JOIN THE FUN</h1>
-      </LeftSection>
-      <RightSection>
-        <h1>Formulario aqui</h1>
-        <ButtonFocus>Join Now</ButtonFocus>
-      </RightSection>
-    </GirlSection>
+
+        <LeftSection></LeftSection>
+        <RightSection>
+          <h1>Formulario aqui</h1>
+          <ButtonFocus>Join Now</ButtonFocus>
+        </RightSection>
+      </TitleSection>
+      <Footer />
+    </>
   );
 };
 
