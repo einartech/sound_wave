@@ -13,11 +13,12 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 const Label = styled.label`
 display: block;
 margin-bottom: 10px;
-font-weight: bold;
+font-family: poppins;
 `;
 
 const Input = styled.input`
 background-color: #202027;
+color: #ffffff;
 width: 100%;
 padding: 10px;
 margin-bottom: 15px;
@@ -46,6 +47,7 @@ background-color: #2180d8;
 background-color: #2796ff;
 }
 `;
+
 
 const Form = () => {
     const handleSubmit = (e) => {

@@ -60,13 +60,13 @@ const Circle2 = styled(Circle)`
 const LeftSection = styled.div`
   flex: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
+  text-align: left;
+  align-items: center;
 `;
 
 const RightSection = styled.div`
   flex: 1;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: left;
