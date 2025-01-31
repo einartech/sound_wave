@@ -1,8 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import girlImage from "../../assets/images/landing-page-girl.png";
+import Form from "../Form/Form";
+import Header from "../header/Header";
+import Footer from "../Footer/Footer";
+import Title from "../Title/Title";
 
-const GirlSection = styled.section`
+const MainDiv = styled.section`
   display: flex;
   height: 100vh;
   color: white;
@@ -25,10 +29,10 @@ const Circle = styled.div`
 `;
 
 const Circle1 = styled(Circle)`
-  width: 350px;
-  height: 350px;
+  width: 550px;
+  height: 550px;
   background-color: #bc3a801a;
-  left: 130px;
+  left: -165px;
   bottom: 100px;
 
   @media (max-width: 768px) {
@@ -39,11 +43,11 @@ const Circle1 = styled(Circle)`
 `;
 
 const Circle2 = styled(Circle)`
-  width: 350px;
-  height: 350px;
+  width: 450px;
+  height: 450px;
   background-color: #3457b21a;
-  top: 60px;
-  left: 500px;
+  top: -210px;
+  left: 300px;
 
   @media (max-width: 768px) {
     width: 100px;
@@ -53,42 +57,16 @@ const Circle2 = styled(Circle)`
   }
 `;
 
-const Circle3 = styled(Circle)`
-  width: 500px;
-  height: 500px;
-  background-color: #3457b21a;
-  bottom: -150px;
-  right: -150px;
-
-  @media (max-width: 768px) {
-    width: 150px;
-    height: 150px;
-    bottom: 0;
-    right: -20px;
-  }
-`;
-
 const LeftSection = styled.div`
   flex: 1;
   display: flex;
-  align-items: flex-end;
-  justify-content: right;
-  margin-right: 4.5em;
-
-  img {
-    max-width: 350px;
-    bottom: 0;
-    z-index: 0;
-
-    @media (max-width: 768px) {
-      display: none;
-    }
-  }
+  justify-content: center;
+  text-align: left;
+  align-items: center;
 `;
 
 const RightSection = styled.div`
   flex: 1;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: left;
@@ -121,36 +99,22 @@ const RightSection = styled.div`
   }
 `;
 
-const ButtonFocus = styled.button`
-  width: 120px;
-  padding: 8px 16px;
-  font-size: 0.9rem;
-  color: white;
-  background-color: #2796ff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-
-  &:hover {
-    background-color: #2180d8;
-  }
-`;
-
 const Join = () => {
   return (
-    <GirlSection>
-      <Circle1 />
-      <Circle2 />
-      <Circle3 />
-      <LeftSection>
-        <h1>JOIN THE FUN</h1>
-      </LeftSection>
-      <RightSection>
-        <h1>Formulario aqui</h1>
-        <ButtonFocus>Join Now</ButtonFocus>
-      </RightSection>
-    </GirlSection>
+    <>
+      <Header />
+      <MainDiv>
+        <Circle1 />
+        <Circle2 />
+        <LeftSection>
+          <Title text1="Join the " text2="Fun." />
+        </LeftSection>
+        <RightSection>
+          <Form />
+        </RightSection>
+      </MainDiv>
+      <Footer />
+    </>
   );
 };
 

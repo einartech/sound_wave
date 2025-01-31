@@ -8,7 +8,7 @@
 }
 
 :root {
- /* font-family: '`Poppins`, sans-serif';*/
+  /* font-family: '`Poppins`, sans-serif';*/
   background-color: #2F303A;
 }
 
@@ -18,4 +18,5 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow: hidden;
+
 }
