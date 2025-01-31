@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import girlImage from "../../assets/images/landing-page-girl.png";
-import Header from "../Header/Header";
-
-
+import Header from "../header/Header";
 
 const GirlSection = styled.section`
   display: flex;
@@ -28,31 +26,31 @@ const Circle = styled.div`
 `;
 
 const Circle1 = styled(Circle)`
-  width: 350px;
-  height: 350px;
+  width: 370px;
+  height: 370px;
   background-color: #bc3a801a;
-  left: 130px;
-  bottom: 100px;
+  left: 125px;
+  bottom: 130px;
 
   @media (max-width: 768px) {
-    width: 100px;
-    height: 100px;
-    left: 20px;
+    width: 80px;
+    height: 80px;
+    left: 50px;
   }
 `;
 
 const Circle2 = styled(Circle)`
-  width: 350px;
-  height: 350px;
+  width: 370px;
+  height: 370px;
   background-color: #3457b21a;
-  top: 60px;
+ /* top: 60px;*/
   left: 500px;
 
   @media (max-width: 768px) {
-    width: 100px;
-    height: 100px;
-    top: 20px;
-    left: 130px;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 100px;
   }
 `;
 
@@ -61,13 +59,14 @@ const Circle3 = styled(Circle)`
   height: 500px;
   background-color: #3457b21a;
   bottom: -150px;
-  right: -150px;
+  right: -140px;
 
   @media (max-width: 768px) {
     width: 150px;
     height: 150px;
     bottom: 0;
-    right:-20px;
+    margin-bottom: 60px;
+    right: -50px;
   }
 `;
 
@@ -76,11 +75,12 @@ const LeftSection = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: right;
-  margin-right: 4.5em;
+  margin-right: 5em;
 
   img {
     max-width: 350px;
     bottom: 0;
+    margin-bottom: 50px;
     z-index: 0;
 
     @media (max-width: 768px) {
@@ -98,11 +98,10 @@ const RightSection = styled.div`
 
   @media (max-width: 768px) {
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: left;
     text-align: left;
-    height: 50vh;
-    padding-left: 1em;
-    margin-bottom:200px;
+    margin-left: -100px;
+    margin-bottom: 300px;
   }
 
   h1 {
@@ -119,15 +118,22 @@ const RightSection = styled.div`
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 20px;
 
+    @media (min-width: 769px) {
+      &::after {
+        content: " click";
+        display: block;
+      }
+    }
+
     @media (max-width: 768px) {
-      font-size: 1rem;
+      font-size: 0.9rem;
       span {
         display: block;
       }
-  }
+    }
   }
 `;
 
@@ -147,29 +153,32 @@ const ButtonFocus = styled.button`
   }
 
   @media (max-width: 768px) {
-    width: 100px;
+    width: 90px;
     padding: 5px 10px;
     font-size: 0.8rem;
   }
 `;
-
 const Home = () => {
   return (
     <>
-    <Header />
-    <GirlSection>
-      <Circle1 />
-      <Circle2 />
-      <Circle3 />
-      <LeftSection>
-        <img src={girlImage} alt="Girl listening to music" />
-      </LeftSection>
-      <RightSection>
-        <h1>Feel The <span>Music</span></h1>
-        <p>Stream over 20 thousand songs<span>with one click</span></p>
-        <ButtonFocus>Join Now</ButtonFocus>
-      </RightSection>
-    </GirlSection>
+      <Header />
+      <GirlSection>
+        <Circle1 />
+        <Circle2 />
+        <Circle3 />
+        <LeftSection>
+          <img src={girlImage} alt="Girl listening to music" />
+        </LeftSection>
+        <RightSection>
+          <h1>
+            Feel The <span>Music</span>
+          </h1>
+          <p>
+            Stream over 20 thousand songs<span>with one click</span>
+          </p>
+          <ButtonFocus>Join Now</ButtonFocus>
+        </RightSection>
+      </GirlSection>
     </>
   );
 };
