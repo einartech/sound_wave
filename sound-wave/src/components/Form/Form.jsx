@@ -1,8 +1,9 @@
-import React from "react";
 import styled from "styled-components";
 
 const FormContainer = styled.div`
 background-color: red;
+width: 40%;
+heigth: 40%;
 padding: 20px;
 border-radius: 5px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 1);
@@ -43,7 +44,8 @@ const Form = () => {
     };
 
     return (
-        <FormContainer>
+    <>
+    <FormContainer>
             <form onSubmit={handleSubmit}>
                 <Label htmlFor="name">Name:</Label>
                 <Input type="text" id="name" name="name" required />
@@ -57,6 +59,7 @@ const Form = () => {
             <SubmitButton type="submit">Join Now</SubmitButton>
             </form>
             </FormContainer>
+    </>
          );
          };
     
