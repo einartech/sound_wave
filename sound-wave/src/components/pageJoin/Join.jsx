@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import girlImage from "../../assets/images/landing-page-girl.png";
-import Form from "../Form/Form"
+import Form from "../Form/Form";
 import Header from "../header/Header";
 import Footer from "../Footer/Footer";
+import Title from "../Title/Title";
 
 const TitleSection = styled.section`
   display: flex;
-  height: 100vh;
+  width: 50hv;
   color: white;
   overflow: hidden;
   position: relative;
@@ -59,19 +60,8 @@ const Circle2 = styled(Circle)`
 const LeftSection = styled.div`
   flex: 1;
   display: flex;
-  align-items: flex-end;
-  justify-content: right;
-  margin-right: 4.5em;
-
-  img {
-    max-width: 350px;
-    bottom: 0;
-    z-index: 0;
-
-    @media (max-width: 768px) {
-      display: none;
-    }
-  }
+  align-items: center;
+  justify-content: center;
 `;
 
 const RightSection = styled.div`
@@ -109,22 +99,6 @@ const RightSection = styled.div`
   }
 `;
 
-const ButtonFocus = styled.button`
-  width: 120px;
-  padding: 8px 16px;
-  font-size: 0.9rem;
-  color: white;
-  background-color: #2796ff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-
-  &:hover {
-    background-color: #2180d8;
-  }
-`;
-
 const Join = () => {
   return (
     <>
@@ -132,12 +106,15 @@ const Join = () => {
       <TitleSection>
         <Circle1 />
         <Circle2 />
-        <h1>JOIN THE FUN</h1>
-      </LeftSection>
-      <RightSection>
-        <Form />
-      </RightSection>
-    </GirlSection>
+        <LeftSection>
+          <Title text1="Join the " text2="Fun." />
+        </LeftSection>
+        <RightSection>
+          <Form />
+        </RightSection>
+      </TitleSection>
+      <Footer />
+    </>
   );
 };
 

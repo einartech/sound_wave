@@ -1,3 +1,15 @@
-.title{
-    background-color: pink;
+.title1 {
+    color: #ffffff;
+    font-size: larger;
+}
+
+.title2 {
+    color: #ff23a1;
+    font-size: larger;
+}
+
+
+span {
+    display: flex;
+    align-items: center;
 }
