@@ -20,12 +20,13 @@ const GirlSection = styled.section`
   justify-content: center;
   margin: 15rem;
 
-  @media (max-width: 768px) {
+ @media (max-width: 768px) {
     flex-direction: column;
     text-align: center;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    margin: 3rem
   }
 `;
 
@@ -40,6 +41,7 @@ const GirlSection = styled.section`
   @media (max-width: 768px) {
   align-items: center;
   text-align: center;
+  margin: 1rem;
   }
   `;
 
@@ -58,10 +60,10 @@ const RightSection = styled.div`
 
 
   img {
-    height: 22rem;
-    width: 22rem;
+    height: 15rem;
+    width: 15rem;
     z-index: 0;
-    margin: 2em;
+    margin: 3em;
   }
 
   @media (max-width: 768px) {
@@ -69,12 +71,7 @@ const RightSection = styled.div`
     align-items: flex-start;
     height: 50vh;
     padding-left: 1em;
-    margin-bottom: 200px;
-  }
-
-    @media (max-width: 768px) {
-      font-size: 0.9rem;
-    }
+    margin-bottom: 20rem;
   }
 `;
 
