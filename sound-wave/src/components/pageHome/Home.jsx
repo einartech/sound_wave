@@ -132,6 +132,7 @@ const RightSection = styled.div`
       font-size: 0.9rem;
       span {
         display: block;
+        content: " click";
       }
     }
   }
@@ -174,7 +175,7 @@ const Home = () => {
             Feel The <span>Music</span>
           </h1>
           <p>
-            Stream over 20 thousand songs<span>with one click</span>
+            Stream over 20 thousand songs<span> with one</span>
           </p>
           <ButtonFocus>Join Now</ButtonFocus>
         </RightSection>
