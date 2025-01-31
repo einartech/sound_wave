@@ -11,12 +11,14 @@ import iconsMore from "../../assets/images/more.svg";
 import Footer from "../Footer/Footer";
 
 
+
 const GirlSection = styled.section`
   display: flex;
-  height: 100vh;
+  height: 50rem;
   color: white;
   overflow: hidden;
-  position: relative;
+  justify-content: center;
+
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -27,29 +29,38 @@ const GirlSection = styled.section`
   }
 `;
 
-const LeftSection = styled.div`
+  const LeftSection = styled.div`
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-right: 1em;
+  justify-content: flex-end;
+  flex-direction: column; 
+  align-items: flex-start; 
   width: 60%;
+  padding: 1rem; 
 
-    /* @media (max-width: 768px) {
-      display: none;
-    } */
+  @media (max-width: 768px) {
+  align-items: center;
+  text-align: center;
   }
-`;
+  `;
+
+  const IconsContainer = styled.div`
+  display: flex;
+  gap: 3rem; 
+  `;
+
 
 const RightSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 39rem;
+
 
   img {
     height: 22rem;
     width: 22rem;
     z-index: 0;
+    margin: 2em;
   }
 
   @media (max-width: 768px) {
@@ -59,10 +70,6 @@ const RightSection = styled.div`
     padding-left: 1em;
     margin-bottom: 200px;
   }
-
-   p {
-    /*font-size: 1.2rem;
-    margin-bottom: 50rem;*/
 
     @media (max-width: 768px) {
       font-size: 0.9rem;
@@ -75,24 +82,16 @@ const Discover = () => {
     <>
     <Header />
     <GirlSection>
-      <LeftSection>
-        <H2Title text="Discover new music" />
-        <Icons
-          img={iconsMic}
-          text="Charts"
-          alt="microphone icon"
-        />
-        <Icons
-          img={iconsAlbum}
-          text="Albums"
-          alt="albums icon"
-        />
-        <Icons
-          img={iconsMore}
-          text="More"
-          alt="more icon"
-        />
-        <PlainText text="By joining you can benefit by listening to the latest albums released." />
+    <LeftSection>
+      <H2Title text="Discover new music" />
+
+      <IconsContainer>
+      <Icons img={iconsMic} text="Charts" alt="microphone icon" />
+      <Icons img={iconsAlbum} text="Albums" alt="albums icon" />
+      <Icons img={iconsMore} text="More" alt="more icon" />
+      </IconsContainer>
+
+      <PlainText text="By joining you can benefit by listening to the latest albums released." />
       </LeftSection>
       <RightSection>
         <img src={cover} alt="image of different album covers" />
