@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import girlImage from "../../assets/images/landing-page-girl.png";
-
+import Form from "../Form/Form"
 const GirlSection = styled.section`
   display: flex;
   height: 100vh;
@@ -147,8 +147,7 @@ const Join = () => {
         <h1>JOIN THE FUN</h1>
       </LeftSection>
       <RightSection>
-        <h1>Formulario aqui</h1>
-        <ButtonFocus>Join Now</ButtonFocus>
+        <Form />
       </RightSection>
     </GirlSection>
   );
