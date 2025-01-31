@@ -6,7 +6,7 @@ export default function Icons({img,text, alt}) {
     <>
     <div  className= {styles.backgroundIcon}>
     <img className= {styles.icons} src={img} alt={alt} />
-    <p className={styles.title}>{text}</p>
+    <p className={styles.text}>{text}</p>
     </div>
     </>
   )
