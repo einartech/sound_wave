@@ -1,126 +1,102 @@
 import React from "react";
 import styled from "styled-components";
+import Header from "../header/Header";
 import cover from "../../assets/images/covers.jpg";
 import Icons from "../Icons/Icons";
-import H2Title from "../Title/Title";
+import H2Title from "../title2/h2Title";
 import PlainText from "../PlainText/PlainText";
-import iconsImage from "../../assets/images/microphone.svg";
+import iconsMic from "../../assets/images/microphone.svg";
+import iconsAlbum from "../../assets/images/albums.svg";
+import iconsMore from "../../assets/images/more.svg";
+import Footer from "../Footer/Footer";
+
+
 
 const GirlSection = styled.section`
   display: flex;
-  height: 100vh;
+  height: 50rem;
   color: white;
   overflow: hidden;
-  position: relative;
+  justify-content: center;
+  margin: 15rem;
 
-  @media (max-width: 768px) {
+ @media (max-width: 768px) {
     flex-direction: column;
     text-align: center;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    margin: 3rem
   }
 `;
 
-const LeftSection = styled.div`
-  flex: 1;
+  const LeftSection = styled.div`
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  margin-right: 4.5em;
-  height: 50%;
-  width: 50%;
+  justify-content: left;
+  flex-direction: column; 
+  align-items: flex-start; 
+  width: 60%;
+  padding: 1rem; 
 
-  img {
-    max-width: 350px;
-    bottom: 0;
-    z-index: 0;
-
-    @media (max-width: 768px) {
-      display: none;
-    }
+  @media (max-width: 768px) {
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
   }
-`;
+  `;
+
+  const IconsContainer = styled.div`
+  display: flex;
+  gap: 1rem; 
+  `;
+
 
 const RightSection = styled.div`
-  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: left;
+  justify-content: right;
+  height: 39rem;
+  margin-top: -2rem;
+
+
+  img {
+    height: 15rem;
+    width: 15rem;
+    z-index: 0;
+    margin: 3em;
+  }
 
   @media (max-width: 768px) {
     justify-content: flex-start;
     align-items: flex-start;
     height: 50vh;
     padding-left: 1em;
-    margin-bottom: 200px;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin-bottom: 10px;
-
-    @media (max-width: 768px) {
-      font-size: 2rem;
-    }
-  }
-
-  p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-
-    @media (max-width: 768px) {
-      font-size: 0.9rem;
-    }
-  }
-`;
-
-const ButtonFocus = styled.button`
-  width: 120px;
-  padding: 8px 16px;
-  font-size: 0.9rem;
-  color: white;
-  background-color: #2796ff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-
-  &:hover {
-    background-color: #2180d8;
+    margin-bottom: 20rem;
   }
 `;
 
 const Discover = () => {
   return (
+    <>
+    <Header />
     <GirlSection>
-      <LeftSection>
-        <H2Title text="text" />
-        <PlainText text="text" />
-        <Icons
-          img={iconsImage}
-          text="Charts"
-          alt="microphone icon"
-        />
-        <Icons
-          img={iconsImage}
-          text="Albums"
-          alt="microphone icon"
-        />
-        <Icons
-          img={iconsImage}
-          text="More"
-          alt="microphone icon"
-        />
+    <LeftSection>
+      <H2Title text="Discover new music" />
+
+      <IconsContainer>
+      <Icons img={iconsMic} text="Charts" alt="microphone icon" />
+      <Icons img={iconsAlbum} text="Albums" alt="albums icon" />
+      <Icons img={iconsMore} text="More" alt="more icon" />
+      </IconsContainer>
+
+      <PlainText text="By joining you can benefit by listening to the latest albums released." />
       </LeftSection>
       <RightSection>
-        <img src={cover} alt="Girl listening to music" />
-
-        <ButtonFocus>Join Now</ButtonFocus>
+        <img src={cover} alt="image of different album covers" />
       </RightSection>
     </GirlSection>
+    <Footer />
+    </>
   );
 };
 

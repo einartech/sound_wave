@@ -1,3 +1,9 @@
 .PlainText{
-    background-color: pink;
+    font-size: 1rem;
+    margin-bottom: 25rem;
+}
+@media (max-width: 768px) {
+    .PlainText{
+        margin-bottom: 0rem;
+    }
 }

@@ -7,7 +7,7 @@ const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2022027;
+  margin-top: 2em;
   padding: 10px 20px;
   color: #fff;
 `;
