@@ -28,30 +28,27 @@ const GirlSection = styled.section`
 `;
 
 const LeftSection = styled.div`
-  flex: 1;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   margin-right: 1em;
-  width: 50%;
+  width: 60%;
 
-    @media (max-width: 768px) {
+    /* @media (max-width: 768px) {
       display: none;
-    }
+    } */
   }
 `;
 
 const RightSection = styled.div`
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: left;
 
   img {
-    height: 20rem;
-    width: 20rem;
+    height: 22rem;
+    width: 22rem;
     z-index: 0;
   }
 
@@ -63,13 +60,13 @@ const RightSection = styled.div`
     margin-bottom: 200px;
   }
 
-  /* p {
-    font-size: 1.2rem;
-    margin-bottom: 50rem;
+   p {
+    /*font-size: 1.2rem;
+    margin-bottom: 50rem;*/
 
     @media (max-width: 768px) {
       font-size: 0.9rem;
-    } */
+    }
   }
 `;
 
