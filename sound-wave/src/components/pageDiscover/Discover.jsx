@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import Header from "../header/Header";
 import cover from "../../assets/images/covers.jpg";
 import Icons from "../Icons/Icons";
-import H2Title from "../Title/Title";
+import H2Title from "../title2/h2Title";
 import PlainText from "../PlainText/PlainText";
 import iconsMic from "../../assets/images/microphone.svg";
 import iconsAlbum from "../../assets/images/albums.svg";
 import iconsMore from "../../assets/images/more.svg";
+import Footer from "../Footer/Footer";
 
 
 const GirlSection = styled.section`
@@ -29,15 +31,10 @@ const LeftSection = styled.div`
   flex: 1;
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-right: 4.5em;
-  /* height: 50%; */
+  margin-right: 1em;
   width: 50%;
-
-  img {
-    max-width: 350px;
-    bottom: 0;
-    z-index: 0;
 
     @media (max-width: 768px) {
       display: none;
@@ -52,6 +49,12 @@ const RightSection = styled.div`
   justify-content: center;
   text-align: left;
 
+  img {
+    height: 20rem;
+    width: 20rem;
+    z-index: 0;
+  }
+
   @media (max-width: 768px) {
     justify-content: flex-start;
     align-items: flex-start;
@@ -60,48 +63,23 @@ const RightSection = styled.div`
     margin-bottom: 200px;
   }
 
-  h1 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin-bottom: 10px;
-
-    @media (max-width: 768px) {
-      font-size: 2rem;
-    }
-  }
-
-  p {
+  /* p {
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 50rem;
 
     @media (max-width: 768px) {
       font-size: 0.9rem;
-    }
-  }
-`;
-
-const ButtonFocus = styled.button`
-  width: 120px;
-  padding: 8px 16px;
-  font-size: 0.9rem;
-  color: white;
-  background-color: #2796ff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-
-  &:hover {
-    background-color: #2180d8;
+    } */
   }
 `;
 
 const Discover = () => {
   return (
+    <>
+    <Header />
     <GirlSection>
       <LeftSection>
-        <div>
-        <H2Title text="text" />
+        <H2Title text="Discover new music" />
         <Icons
           img={iconsMic}
           text="Charts"
@@ -117,15 +95,14 @@ const Discover = () => {
           text="More"
           alt="more icon"
         />
-        <PlainText text="text" />
-        </div>
+        <PlainText text="By joining you can benefit by listening to the latest albums released." />
       </LeftSection>
       <RightSection>
-        <img src={cover} alt="Girl listening to music" />
-
-        <ButtonFocus>Join Now</ButtonFocus>
+        <img src={cover} alt="image of different album covers" />
       </RightSection>
     </GirlSection>
+    <Footer />
+    </>
   );
 };
 
