@@ -10,6 +10,10 @@ const Header = styled.header`
   margin-top: 2em;
   padding: 10px 20px;
   color: #fff;
+ 
+  @media (max-width: 768px) {
+    margin: 1em;
+  }
 `;
 
 const Navbar = () => {
