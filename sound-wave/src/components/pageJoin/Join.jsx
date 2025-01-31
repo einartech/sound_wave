@@ -29,10 +29,10 @@ const Circle = styled.div`
 `;
 
 const Circle1 = styled(Circle)`
-  width: 350px;
-  height: 350px;
+  width: 550px;
+  height: 550px;
   background-color: #bc3a801a;
-  left: 130px;
+  left: -165px;
   bottom: 100px;
 
   @media (max-width: 768px) {
@@ -43,11 +43,11 @@ const Circle1 = styled(Circle)`
 `;
 
 const Circle2 = styled(Circle)`
-  width: 350px;
-  height: 350px;
+  width: 450px;
+  height: 450px;
   background-color: #3457b21a;
-  top: 60px;
-  left: 500px;
+  top: -210px;
+  left: 300px;
 
   @media (max-width: 768px) {
     width: 100px;
