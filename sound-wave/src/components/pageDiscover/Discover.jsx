@@ -18,7 +18,7 @@ const GirlSection = styled.section`
   color: white;
   overflow: hidden;
   justify-content: center;
-
+  margin: 15rem;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -31,7 +31,7 @@ const GirlSection = styled.section`
 
   const LeftSection = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: left;
   flex-direction: column; 
   align-items: flex-start; 
   width: 60%;
@@ -45,15 +45,16 @@ const GirlSection = styled.section`
 
   const IconsContainer = styled.div`
   display: flex;
-  gap: 3rem; 
+  gap: 1rem; 
   `;
 
 
 const RightSection = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: right;
   height: 39rem;
+  margin-top: -2rem;
 
 
   img {
