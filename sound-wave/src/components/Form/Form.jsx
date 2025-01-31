@@ -6,11 +6,18 @@ const FormContainer = styled.div`
   justify-content: center;
   background-color: rgb(39, 32, 32);
 
-  width: 55%;
+  width: 70%;
   heigth: 25%;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  margin: 10px;
+
+  @media (max-width: 768px) {
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
+  }
 `;
 
 const Label = styled.label`
@@ -49,6 +56,7 @@ const SubmitButton = styled.button`
     background-color: #2796ff;
   }
 `;
+
 
 
 const Form = () => {
