@@ -6,9 +6,9 @@ import Header from "../header/Header";
 import Footer from "../Footer/Footer";
 import Title from "../Title/Title";
 
-const TitleSection = styled.section`
+const MainDiv = styled.section`
   display: flex;
-  width: 50hv;
+  height: 100vh;
   color: white;
   overflow: hidden;
   position: relative;
@@ -103,7 +103,7 @@ const Join = () => {
   return (
     <>
       <Header />
-      <TitleSection>
+      <MainDiv>
         <Circle1 />
         <Circle2 />
         <LeftSection>
@@ -112,7 +112,7 @@ const Join = () => {
         <RightSection>
           <Form />
         </RightSection>
-      </TitleSection>
+      </MainDiv>
       <Footer />
     </>
   );
