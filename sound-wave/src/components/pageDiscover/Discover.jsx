@@ -18,7 +18,11 @@ const GirlSection = styled.section`
   color: white;
   overflow: hidden;
   justify-content: center;
-  margin: 15rem;
+  align-items:center;
+  /* margin-top: 15rem; */
+  margin-bottom: 15rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 
  @media (max-width: 768px) {
     flex-direction: column;
@@ -35,19 +39,19 @@ const GirlSection = styled.section`
   justify-content: left;
   flex-direction: column; 
   align-items: flex-start; 
-  width: 60%;
+  /* width: 50%; */
   padding: 1rem; 
 
   @media (max-width: 768px) {
   align-items: center;
-  text-align: center;
+  text-align: left;
   margin: 1rem;
   }
   `;
 
   const IconsContainer = styled.div`
   display: flex;
-  gap: 1rem; 
+  gap: 1rem;
   `;
 
 
