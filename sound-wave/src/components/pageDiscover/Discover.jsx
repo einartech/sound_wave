@@ -27,10 +27,11 @@ const GirlSection = styled.section`
  @media (max-width: 768px) {
     flex-direction: column;
     text-align: center;
-    height: 100vh;
-    justify-content: center;
+    min-height: 100vh;
+    height: auto;
+    /* justify-content: center; */
     align-items: center;
-    margin: 3rem
+    /* margin: 3rem */
   }
 `;
 
@@ -43,9 +44,10 @@ const GirlSection = styled.section`
   padding: 1rem; 
 
   @media (max-width: 768px) {
-  align-items: center;
+  /* align-items: center; */
   text-align: left;
-  margin: 1rem;
+  margin: 0.2rem;
+  width: 100%;
   }
   `;
 
@@ -60,22 +62,21 @@ const RightSection = styled.div`
   flex-direction: column;
   justify-content: right;
   height: 39rem;
-  margin-top: -2rem;
-
+  /* margin-top: -2rem; */
 
   img {
-    height: 15rem;
-    width: 15rem;
-    z-index: 0;
-    margin: 3em;
+   width: 100%;
+   max-width: 15rem;
+   height: auto;
+   margin: 1rem;
   }
 
   @media (max-width: 768px) {
     justify-content: flex-start;
-    align-items: flex-start;
-    height: 50vh;
-    padding-left: 1em;
-    margin-bottom: 20rem;
+    align-items: center;
+    height: auto;
+    /* padding-left: 1em; */
+    margin-bottom: 1rem;
   }
 `;
 
@@ -86,13 +87,11 @@ const Discover = () => {
     <GirlSection>
     <LeftSection>
       <H2Title text="Discover new music" />
-
       <IconsContainer>
       <Icons img={iconsMic} text="Charts" alt="microphone icon" />
       <Icons img={iconsAlbum} text="Albums" alt="albums icon" />
       <Icons img={iconsMore} text="More" alt="more icon" />
       </IconsContainer>
-
       <PlainText text="By joining you can benefit by listening to the latest albums released." />
       </LeftSection>
       <RightSection>
