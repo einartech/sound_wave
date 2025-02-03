@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Form from "../Form/Form";
 import Header from "../header/Header";
-import Footer from "../footer/Footer";
+import Footer from "../Footer/Footer";
 //import Title from "../Title/Title";
 /*
 const MainDiv = styled.section`
@@ -86,7 +86,7 @@ const RightSection = styled.div`
   h1 {
     font-size: 2.5rem;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
   
   
 
@@ -146,9 +146,9 @@ const MainDiv = styled.section`
 `;
 
 const StyledTitle = styled.h1`
-  font-size: 2.5rem;
-  font-weight: 500;
-  margin-bottom: 10px;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 100px;
   white-space: nowrap;
 
   @media (max-width: 768px) {
@@ -217,11 +217,11 @@ const LeftSection = styled.div`
 `;
 
 const RightSection = styled.div`
-  flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding-right: 100px;
+  padding-right: 25%;
+
 
   @media (max-width: 768px) {
     padding-right: 0;
@@ -238,7 +238,7 @@ const Join = () => {
         <LeftSection>
           {/* <Title text1="Join the " text2="fun." /> */}
           <StyledTitle>
-            Join The <Highlight>Fun</Highlight>
+            Join the <Highlight>fun.</Highlight>
           </StyledTitle>
         </LeftSection>
         <RightSection>
