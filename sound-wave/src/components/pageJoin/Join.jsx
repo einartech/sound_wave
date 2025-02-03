@@ -117,7 +117,7 @@ const Join = () => {
         <Title text1="Join the " text2="Fun." />  
         </LeftSection>
         <RightSection>
-          <Form />
+          <Form />n
         </RightSection>
       </MainDiv>
       <Footer />
