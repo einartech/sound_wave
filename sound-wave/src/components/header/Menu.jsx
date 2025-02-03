@@ -7,7 +7,8 @@ const Nav = styled.nav`
   margin-right: 20em;
 
   @media (max-width: 768px) {
-    margin-right: 10px;
+    margin-right: 0.5em;
+    gap:0.8em;
   }
 `;
 

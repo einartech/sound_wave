@@ -12,7 +12,8 @@ const Header = styled.header`
   color: #fff;
  
   @media (max-width: 768px) {
-    margin: 1em;
+    margin-top: 1em;
+    margn-left: -1em;
   }
 `;
 

@@ -101,7 +101,8 @@ const RightSection = styled.div`
     justify-content: flex-start;
     align-items: left;
     text-align: left;
-    margin-left: -100px;
+    margin-left: -50px;
+   /* margin-left:-4em;*/
     margin-bottom: 300px;
   }
 

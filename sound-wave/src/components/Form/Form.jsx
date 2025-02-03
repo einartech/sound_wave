@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 const FormContainer = styled.div`
-  position: relative;
-  top: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
