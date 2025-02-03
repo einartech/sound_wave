@@ -161,7 +161,7 @@ const StyledTitle = styled.h1`
 `;
 
 const Highlight = styled.span`
-  color: #ff00ff; 
+  color: #2796ff; 
   
   @media (max-width: 768px) {
     display: block;
