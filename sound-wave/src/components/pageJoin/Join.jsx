@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import girlImage from "../../assets/images/landing-page-girl.png";
 import Form from "../Form/Form";
 import Header from "../header/Header";
 import Footer from "../Footer/Footer";
@@ -83,9 +82,12 @@ const RightSection = styled.div`
     font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 10px;
+  
+  
 
     @media (max-width: 768px) {
-      font-size: 2rem;
+    font-size: 2rem;
+
     }
   }
 
@@ -107,7 +109,7 @@ const Join = () => {
         <Circle1 />
         <Circle2 />
         <LeftSection>
-          <Title text1="Join the " text2="Fun." />
+        <Title text1="Join the " text2="Fun." />  
         </LeftSection>
         <RightSection>
           <Form />

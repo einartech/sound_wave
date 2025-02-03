@@ -74,7 +74,6 @@ const RightSection = styled.div`
     @media (max-width: 768px) {
       font-size: 0.9rem;
     }
-  }
 `;
 
 const Discover = () => {

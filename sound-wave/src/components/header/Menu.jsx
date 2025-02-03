@@ -27,8 +27,8 @@ const Link = styled.a`
 const Menu = () => {
   return (
     <Nav>
-      <Link href="#discover">Discover</Link>
-      <Link href="#join">Join</Link>
+      <Link href="/discover">Discover</Link>
+      <Link href="/join">Join</Link>
     </Nav>
   );
 };
