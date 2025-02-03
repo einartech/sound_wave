@@ -122,7 +122,6 @@ import Footer from "../Footer/Footer";
 
 const DiscoverSection = styled.section`
   display: flex;
-  height: 50rem;
   color: white;
   overflow: hidden;
   justify-content: center;
