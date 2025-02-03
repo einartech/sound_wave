@@ -59,23 +59,27 @@ const Circle2 = styled(Circle)`
 const LeftSection = styled.div`
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   text-align: left;
   align-items: center;
+  margin: 100px;
+  bottom: 45px;
 `;
 
 const RightSection = styled.div`
   flex: 1;
   flex-direction: column;
+  position: relative;
+  top: 250px;
   justify-content: center;
   text-align: left;
 
   @media (max-width: 768px) {
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction:row;
+    align-items: flex-bottom;
     height: 50vh;
     padding-left: 1em;
-    margin-bottom: 200px;
+    margin-bottom: 20px;
   }
 
   h1 {

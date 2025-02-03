@@ -18,62 +18,66 @@ const GirlSection = styled.section`
   color: white;
   overflow: hidden;
   justify-content: center;
+  align-items:center;
+  /* margin-top: 15rem; */
+  margin-bottom: 15rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 
-
-  @media (max-width: 768px) {
+ @media (max-width: 768px) {
     flex-direction: column;
     text-align: center;
-    height: 100vh;
-    justify-content: center;
+    min-height: 100vh;
+    height: auto;
+    /* justify-content: center; */
     align-items: center;
+    /* margin: 3rem */
   }
 `;
 
   const LeftSection = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: left;
   flex-direction: column; 
   align-items: flex-start; 
-  width: 60%;
+  /* width: 50%; */
   padding: 1rem; 
 
   @media (max-width: 768px) {
-  align-items: center;
-  text-align: center;
+  /* align-items: center; */
+  text-align: left;
+  margin: 0.2rem;
+  width: 100%;
   }
   `;
 
   const IconsContainer = styled.div`
   display: flex;
-  gap: 3rem; 
+  gap: 1rem;
   `;
 
 
 const RightSection = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: right;
   height: 39rem;
-
+  /* margin-top: -2rem; */
 
   img {
-    height: 22rem;
-    width: 22rem;
-    z-index: 0;
-    margin: 2em;
+   width: 100%;
+   max-width: 15rem;
+   height: auto;
+   margin: 1rem;
   }
 
   @media (max-width: 768px) {
     justify-content: flex-start;
-    align-items: flex-start;
-    height: 50vh;
-    padding-left: 1em;
-    margin-bottom: 200px;
+    align-items: center;
+    height: auto;
+    /* padding-left: 1em; */
+    margin-bottom: 1rem;
   }
-
-    @media (max-width: 768px) {
-      font-size: 0.9rem;
-    }
 `;
 
 const Discover = () => {
@@ -83,13 +87,11 @@ const Discover = () => {
     <GirlSection>
     <LeftSection>
       <H2Title text="Discover new music" />
-
       <IconsContainer>
       <Icons img={iconsMic} text="Charts" alt="microphone icon" />
       <Icons img={iconsAlbum} text="Albums" alt="albums icon" />
       <Icons img={iconsMore} text="More" alt="more icon" />
       </IconsContainer>
-
       <PlainText text="By joining you can benefit by listening to the latest albums released." />
       </LeftSection>
       <RightSection>
