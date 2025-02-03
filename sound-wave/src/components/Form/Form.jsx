@@ -6,8 +6,8 @@ const FormContainer = styled.div`
   justify-content: center;
   background-color: rgb(39, 32, 32);
 
-  width: 70%;
-  heigth: 25%;
+  width: 55%;
+  heigth: 35%;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);

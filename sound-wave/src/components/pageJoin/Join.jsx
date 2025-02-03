@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import girlImage from "../../assets/images/landing-page-girl.png";
 import Form from "../Form/Form";
 import Header from "../header/Header";
 import Footer from "../Footer/Footer";
@@ -8,6 +7,7 @@ import Title from "../Title/Title";
 
 const MainDiv = styled.section`
   display: flex;
+  flex-direction: row;
   height: 100vh;
   color: white;
   overflow: hidden;
@@ -67,6 +67,7 @@ const LeftSection = styled.div`
   bottom: 45px;
 `;
 
+
 const RightSection = styled.div`
   flex: 1;
   flex-direction: column;
@@ -80,7 +81,6 @@ const RightSection = styled.div`
     align-items: flex-bottom;
     height: 50vh;
     padding-left: 1em;
-    margin-bottom: 20px;
   }
 
   h1 {

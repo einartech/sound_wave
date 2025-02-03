@@ -1,5 +1,6 @@
 import titleStyle from "./Style.module.css";
 
+
 export default function Title({ text1, text2 }) {
   return (
     <>

@@ -64,7 +64,7 @@ function Main() {
         height= "100px"
         />
        
->>>>>>> development
+
       </section>
     </div>
   );
