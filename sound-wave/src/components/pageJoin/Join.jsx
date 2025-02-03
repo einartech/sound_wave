@@ -152,16 +152,18 @@ const StyledTitle = styled.h1`
   white-space: nowrap;
 
   @media (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 2.5rem;
     white-space: normal;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    position: relative;
+    left: -2.5em;
   }
 `;
 
 const Highlight = styled.span`
-  color: #2796ff; 
+  color: #BC3A80; 
   
   @media (max-width: 768px) {
     display: block;
@@ -211,8 +213,10 @@ const LeftSection = styled.div`
   padding-left: 100px;
 
   @media (max-width: 768px) {
-    padding-left: 0;
-    text-align: center;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 `;
 
