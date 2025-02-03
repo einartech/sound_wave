@@ -9,21 +9,22 @@
     padding: 1em;
     height: 5em;
     width: 5em;
+    margin-bottom: 1.2em;
+    margin-top: 1em;
 }
 
 .icons{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 5rem;
     height: 2rem;
     width: 2rem;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 .text{
     color: #FFFFFF;
     background: none;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    margin-top: 5px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
