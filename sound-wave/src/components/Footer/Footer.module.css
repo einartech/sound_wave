@@ -6,8 +6,8 @@
     bottom: 0;
     background-color: #202027;
     width: 100%;
-
 }
+
 .footerFont{
     color: #FFFFFF;
     background: none;
@@ -15,20 +15,24 @@
     font-weight: bold;
     padding: 20px;
 }
+
 .footerSocials{
     color: #FFFFFF;
     background: none;
     font-size: 1.2rem;
     font-weight: bold;
-    padding-right: 20px;
+    padding-right: 35px;
 }
+
 .footerImg{
     display: flex;
     color: #FFFFFF;
+    height: 1.8em;
+    width: 1.8em;
     background: none;
-    size: 1rem;
-    padding: 1%;    
+    padding-right: 0.5em;    
 }
+
 .footerLeftPart{
     background: none;
     display: flex;
@@ -46,7 +50,7 @@
     justify-content: center;
 }
 .wrappedSocials{
-    background-color: none;
+    display: flex;
 }
 
 @media (max-width: 768px) {
@@ -62,10 +66,15 @@
     .footerFont, .footerSocials{
         font-weight: bold;
         font-size: medium;
+        padding: 10px;
+        padding-top: 0;
     }
     .footerImg{
         flex-direction: column;
         align-items: center;
+        height: 1.5em;
+        width: 1.5em;
+        margin-left: 5px;
     }
     .wrappedSocials{
 
