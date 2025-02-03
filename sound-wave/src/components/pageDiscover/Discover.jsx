@@ -126,6 +126,8 @@ const DiscoverSection = styled.section`
   overflow: hidden;
   justify-content: center;
   align-items: stretch;
+  margin-top: 9rem;
+
 
  @media (max-width: 768px) {
     display: contents;
@@ -142,6 +144,7 @@ const DiscoverSection = styled.section`
   flex-direction: column; 
   align-items: flex-start; 
   padding: 1rem; 
+  
  
 
   @media (max-width: 768px) {
