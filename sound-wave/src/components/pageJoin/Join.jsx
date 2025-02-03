@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Form from "../Form/Form";
 import Header from "../header/Header";
-import Footer from "../footer/Footer";
+import Footer from "../Footer/Footer";
 
 const MainDiv = styled.section`
   display: flex;
