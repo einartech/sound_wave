@@ -4,9 +4,8 @@ const FormContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(39, 32, 32);
-
-  width: 70%;
+  background-color: #202027;
+  width: 400px;
   heigth: 25%;
   padding: 20px;
   border-radius: 5px;
@@ -45,7 +44,7 @@ const SubmitButton = styled.button`
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 
@@ -88,3 +87,6 @@ const Form = () => {
 };
 
 export default Form;
+
+
+

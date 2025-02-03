@@ -3,6 +3,7 @@ import styled from "styled-components";
 import girlImage from "../../assets/images/landing-page-girl.png";
 import Header from "../header/Header";
 
+
 const GirlSection = styled.section`
   display: flex;
   height: 100vh;
@@ -43,7 +44,7 @@ const Circle2 = styled(Circle)`
   width: 370px;
   height: 370px;
   background-color: #3457b21a;
- /* top: 60px;*/
+  /* top: 60px;*/
   left: 500px;
 
   @media (max-width: 768px) {
@@ -100,17 +101,21 @@ const RightSection = styled.div`
     justify-content: flex-start;
     align-items: left;
     text-align: left;
-    margin-left: -100px;
+    margin-left: -50px;
+   /* margin-left:-4em;*/
     margin-bottom: 300px;
   }
 
-  h1 {
+   h1{
     font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 10px;
+    white-space: nowrap;
 
     @media (max-width: 768px) {
       font-size: 2rem;
+      white-space: normal;
+
       span {
         display: block;
       }
@@ -118,7 +123,7 @@ const RightSection = styled.div`
   }
 
   p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
 
     @media (min-width: 769px) {
@@ -130,9 +135,10 @@ const RightSection = styled.div`
 
     @media (max-width: 768px) {
       font-size: 0.9rem;
-      span {
+
+      &::after {
+        content: " with one click";
         display: block;
-        content: " click";
       }
     }
   }
@@ -174,9 +180,7 @@ const Home = () => {
           <h1>
             Feel The <span>Music</span>
           </h1>
-          <p>
-            Stream over 20 thousand songs<span> with one</span>
-          </p>
+          <p>Stream over 20 thousand songs</p>
           <ButtonFocus>Join Now</ButtonFocus>
         </RightSection>
       </GirlSection>

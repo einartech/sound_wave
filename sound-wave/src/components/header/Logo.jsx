@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-const LogoContainer = styled.div`
+const LogoLink = styled.a`
   display: flex;
   align-items: center;
   margin-left: 20em;
+  text-decoration: none;
+  color: inherit;
   
   @media (max-width: 768px) {
     margin-left: 10px;
@@ -25,10 +27,10 @@ const LogoText = styled.span`
 
 const Logo = () => {
   return (
-    <LogoContainer>
+    <LogoLink href="/">
       <LogoImage src="/src/assets/images/logo.png" alt="Soundwave" />
       <LogoText>Soundwave</LogoText>
-    </LogoContainer>
+    </LogoLink>
   );
 };
 
