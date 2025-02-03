@@ -7,7 +7,8 @@ const Nav = styled.nav`
   margin-right: 20em;
 
   @media (max-width: 768px) {
-    margin-right: 10px;
+    margin-right: 0.5em;
+    gap:0.8em;
   }
 `;
 
@@ -27,8 +28,8 @@ const Link = styled.a`
 const Menu = () => {
   return (
     <Nav>
-      <Link href="#discover">Discover</Link>
-      <Link href="#join">Join</Link>
+      <Link href="/discover">Discover</Link>
+      <Link href="/join">Join</Link>
     </Nav>
   );
 };
