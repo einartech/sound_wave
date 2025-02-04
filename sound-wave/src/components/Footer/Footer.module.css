@@ -41,6 +41,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .footerRightPart{
     background: none;
     display: flex;
@@ -49,9 +50,11 @@
     align-items: center;
     justify-content: center;
 }
+
 .wrappedSocials{
     display: flex;
 }
+
 
 @media (max-width: 768px) {
     .footerContainer {
@@ -74,13 +77,13 @@
         align-items: center;
         height: 1.5em;
         width: 1.5em;
-        margin-left: 5px;
+        position: relative;
+        left: 2em;
     }
-    .wrappedSocials{
 
+    .wrappedSocials{
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
     }
 }
