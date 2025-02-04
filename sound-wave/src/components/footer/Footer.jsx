@@ -16,7 +16,7 @@ export default function Footer() {
       <div className={styles.footerRightPart}>
         <div className={styles.wrappedSocials}>
           <a
-            href="https://twitter.com/tuusuario"
+            href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -29,7 +29,7 @@ export default function Footer() {
             <p className={styles.footerSocials}>Twitter</p>
           </a>
           <a
-            href="https://facebook.com/tuusuario"
+            href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
             style={{
