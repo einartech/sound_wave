@@ -33,7 +33,7 @@ const StyledTitle = styled.h1`
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    left: -1em;
+    left: -2em;
     top: -1em;
   }
 `;

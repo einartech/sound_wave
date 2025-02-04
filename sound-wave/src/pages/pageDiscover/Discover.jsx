@@ -74,7 +74,6 @@ const Discover = () => {
       <DiscoverSection>
         <LeftSection>
           <H2Title text="Discover new music" />
-          11
           <IconsContainer>
             <Features img={iconsMic} text="Charts" alt="microphone icon" />
             <Features img={iconsAlbum} text="Albums" alt="albums icon" />
