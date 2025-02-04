@@ -1,5 +1,5 @@
-import { describe, expect, it } from "vitest";
-import { getByRole, render, screen } from "@testing-library/react";
+import { describe, it } from "vitest";
+import { render } from "@testing-library/react";
 import Header from "../components/header/Header";
 import Footer from "../components/Footer/Footer";
 
