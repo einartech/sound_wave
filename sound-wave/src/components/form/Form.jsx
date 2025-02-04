@@ -68,10 +68,28 @@ const Form = () => {
       <FormContainer>
         <form onSubmit={handleSubmit}>
           <Label htmlFor="name">Name:</Label>
-          <Input type="text" id="name" name="name" required />
+          <Input type="text" maxLength={20} pattern="[A-Za-z]{3,}" 
+            title="Please enter your name  (mín 3 characters)"
+            onChange={(e) => {
+              const valor = e.target.value;
+              // Validación en tiempo real
+              if (!/^[A-Za-z]+$/.test(valor)) {
+                console.log("Only letters allowed");
+              }
+            }}id="name" name="name" required />
 
           <Label htmlFor="email">Email:</Label>
-          <Input type="email" id="email" name="email" required />
+          <Input type="email" 
+          pattern="[A-Za-z0-9]"
+          title="Please enter a valid email"
+          onChange={(e) => {
+            const valor = e.target.value;
+            if (!/^[A-Za-z0-9]+$/.test(valor)) {
+              console.log("Please enter a valid email");
+            }
+
+          }}
+          id="email" name="email" required />
 
           <Label htmlFor="password">Password:</Label>
           <Input type="password" id="password" name="password" required />
