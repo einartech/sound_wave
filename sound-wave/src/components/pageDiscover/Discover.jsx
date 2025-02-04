@@ -12,42 +12,38 @@ import Footer from "../Footer/Footer";
 
 
 
-const GirlSection = styled.section`
+const DiscoverSection = styled.section`
   display: flex;
-  height: 50rem;
   color: white;
   overflow: hidden;
   justify-content: center;
-  align-items:center;
-  /* margin-top: 15rem; */
-  margin-bottom: 15rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  align-items: stretch;
+  margin-top: 9rem;
+
 
  @media (max-width: 768px) {
+    display: contents;
     flex-direction: column;
     text-align: center;
     min-height: 100vh;
     height: auto;
-    /* justify-content: center; */
     align-items: center;
-    /* margin: 3rem */
   }
 `;
 
   const LeftSection = styled.div`
   display: flex;
-  justify-content: left;
   flex-direction: column; 
   align-items: flex-start; 
-  /* width: 50%; */
   padding: 1rem; 
+  
+ 
 
   @media (max-width: 768px) {
-  /* align-items: center; */
   text-align: left;
   margin: 0.2rem;
   width: 100%;
+  margin-right: -1em;
   }
   `;
 
@@ -61,8 +57,6 @@ const RightSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: right;
-  height: 39rem;
-  /* margin-top: -2rem; */
 
   img {
    width: 100%;
@@ -75,7 +69,6 @@ const RightSection = styled.div`
     justify-content: flex-start;
     align-items: center;
     height: auto;
-    /* padding-left: 1em; */
     margin-bottom: 1rem;
   }
 `;
@@ -84,7 +77,7 @@ const Discover = () => {
   return (
     <>
     <Header />
-    <GirlSection>
+    <DiscoverSection>
     <LeftSection>
       <H2Title text="Discover new music" />
       <IconsContainer>
@@ -97,7 +90,7 @@ const Discover = () => {
       <RightSection>
         <img src={cover} alt="image of different album covers" />
       </RightSection>
-    </GirlSection>
+    </DiscoverSection>
     <Footer />
     </>
   );

@@ -19,7 +19,6 @@ import covers from "../../assets/images/covers.jpg";
 function Main() {
   return (
     <div className={style["main-container"]}>
-<<<<<<< HEAD
       <section className={style["left-section"]}>
         <Title text="main title" />
         <p>parrafo descriptivo</p>
@@ -34,7 +33,6 @@ function Main() {
           width="30%"
           height="65%"
         />
-=======
       <section className={style["left-section"]}></section>
 
 
@@ -64,7 +62,6 @@ function Main() {
         height= "100px"
         />
        
->>>>>>> development
       </section>
     </div>
   );
