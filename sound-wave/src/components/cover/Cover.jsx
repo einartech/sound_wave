@@ -1,6 +1,6 @@
 import style from "./Style.module.css"; // Importación del archivo CSS
 
-export default function Image({ img, alt, width, height }) {
+export default function Cover({ img, alt, width, height }) {
   // Sintaxis correcta de la función
   return (
     <>

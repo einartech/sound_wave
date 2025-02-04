@@ -1,7 +1,7 @@
 import styles from './Style.module.css'
 
 
-export default function Icons({img,text, alt}) {
+export default function Features({img,text, alt}) {
   return (
     <>
     <div  className= {styles.backgroundIcon}>
