@@ -13,30 +13,30 @@ const FormContainer = styled.div`
   margin: 10px;
 
   @media (max-width: 768px) {
-  width: 100%;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
   }
 `;
 
 const Label = styled.label`
-display: block;
-margin-bottom: 10px;
-font-family: poppins;
+  display: block;
+  margin-bottom: 10px;
+  font-family: poppins;
 `;
 
 const Input = styled.input`
-background-color: #202027;
-color: #ffffff;
-width: 100%;
-padding: 10px;
-margin-bottom: 15px;
-border: 1px solid #2E3852;
-border-radius: 4px;
-&:focus {
-border: 1px solid ##596da0
-}
+  background-color: #202027;
+  color: #ffffff;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #2e3852;
+  border-radius: 4px;
+  &:focus {
+    border: 1px solid ##596da0;
+  }
 `;
 
 const SubmitButton = styled.button`
@@ -56,8 +56,6 @@ const SubmitButton = styled.button`
     background-color: #2796ff;
   }
 `;
-
-
 
 const Form = () => {
   const handleSubmit = (e) => {
@@ -88,6 +86,3 @@ const Form = () => {
 };
 
 export default Form;
-
-
-

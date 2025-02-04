@@ -10,8 +10,6 @@ import iconsAlbum from "../../assets/images/albums.svg";
 import iconsMore from "../../assets/images/more.svg";
 import Footer from "../../components/footer/Footer";
 
-
-
 const DiscoverSection = styled.section`
   display: flex;
   color: white;
@@ -20,8 +18,7 @@ const DiscoverSection = styled.section`
   align-items: stretch;
   margin-top: 9rem;
 
-
- @media (max-width: 768px) {
+  @media (max-width: 768px) {
     display: contents;
     flex-direction: column;
     text-align: center;
@@ -31,27 +28,24 @@ const DiscoverSection = styled.section`
   }
 `;
 
-  const LeftSection = styled.div`
+const LeftSection = styled.div`
   display: flex;
-  flex-direction: column; 
-  align-items: flex-start; 
-  padding: 1rem; 
-  
- 
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
 
   @media (max-width: 768px) {
-  text-align: left;
-  margin: 0.2rem;
-  width: 100%;
-  margin-right: -1em;
+    text-align: left;
+    margin: 0.2rem;
+    width: 100%;
+    margin-right: -1em;
   }
-  `;
+`;
 
-  const IconsContainer = styled.div`
+const IconsContainer = styled.div`
   display: flex;
   gap: 1rem;
-  `;
-
+`;
 
 const RightSection = styled.div`
   display: flex;
@@ -59,10 +53,10 @@ const RightSection = styled.div`
   justify-content: right;
 
   img {
-   width: 100%;
-   max-width: 15rem;
-   height: auto;
-   margin: 1rem;
+    width: 100%;
+    max-width: 15rem;
+    height: auto;
+    margin: 1rem;
   }
 
   @media (max-width: 768px) {
@@ -76,22 +70,23 @@ const RightSection = styled.div`
 const Discover = () => {
   return (
     <>
-    <Header />
-    <DiscoverSection>
-    <LeftSection>
-      <H2Title text="Discover new music" />11
-      <IconsContainer>
-      <Features img={iconsMic} text="Charts" alt="microphone icon" />
-      <Features img={iconsAlbum} text="Albums" alt="albums icon" />
-      <Features img={iconsMore} text="More" alt="more icon" />
-      </IconsContainer>
-      <PlainText text="By joining you can benefit by listening to the latest albums released." />
-      </LeftSection>
-      <RightSection>
-        <img src={cover} alt="image of different album covers" />
-      </RightSection>
-    </DiscoverSection>
-    <Footer />
+      <Header />
+      <DiscoverSection>
+        <LeftSection>
+          <H2Title text="Discover new music" />
+          11
+          <IconsContainer>
+            <Features img={iconsMic} text="Charts" alt="microphone icon" />
+            <Features img={iconsAlbum} text="Albums" alt="albums icon" />
+            <Features img={iconsMore} text="More" alt="more icon" />
+          </IconsContainer>
+          <PlainText text="By joining you can benefit by listening to the latest albums released." />
+        </LeftSection>
+        <RightSection>
+          <img src={cover} alt="image of different album covers" />
+        </RightSection>
+      </DiscoverSection>
+      <Footer />
     </>
   );
 };

@@ -7,7 +7,7 @@ const LogoLink = styled.a`
   margin-left: 20em;
   text-decoration: none;
   color: inherit;
-  
+
   @media (max-width: 768px) {
     margin-left: 10px;
   }

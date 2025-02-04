@@ -3,7 +3,6 @@ import styled from "styled-components";
 import girlImage from "../../assets/images/landing-page-girl.png";
 import Header from "../../components/header/Header";
 
-
 const GirlSection = styled.section`
   display: flex;
   height: 100vh;
@@ -102,11 +101,10 @@ const RightSection = styled.div`
     align-items: left;
     text-align: left;
     margin-left: -50px;
-   /* margin-left:-4em;*/
     margin-bottom: 300px;
   }
 
-   h1{
+  h1 {
     font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 10px;

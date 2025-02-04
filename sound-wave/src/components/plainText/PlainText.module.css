@@ -1,10 +1,10 @@
-.PlainText{
-    font-size: 1rem;
-    margin-bottom: 25rem;
+.PlainText {
+  font-size: 1rem;
+  margin-bottom: 25rem;
 }
 @media (max-width: 768px) {
-    .PlainText{
-        margin-bottom: 0rem;
-        font-size: smaller;
-    }
+  .PlainText {
+    margin-bottom: 0rem;
+    font-size: smaller;
+  }
 }

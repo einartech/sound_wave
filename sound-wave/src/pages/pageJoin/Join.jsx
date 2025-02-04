@@ -39,8 +39,8 @@ const StyledTitle = styled.h1`
 `;
 
 const Highlight = styled.span`
-  color: #BC3A80; 
-  
+  color: #bc3a80;
+
   @media (max-width: 768px) {
     display: block;
   }
@@ -101,7 +101,6 @@ const RightSection = styled.div`
   justify-content: flex-start;
   align-items: center;
   padding-right: 25%;
-
 
   @media (max-width: 768px) {
     display: flex;

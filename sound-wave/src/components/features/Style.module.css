@@ -1,30 +1,30 @@
-.backgroundIcon{
-    display: flex;
-    background-color: #202027;
-    color: white;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-    justify-content: center;
-    padding: 1em;
-    height: 5em;
-    width: 5em;
-    margin-bottom: 1.2em;
-    margin-top: 1em;
+.backgroundIcon {
+  display: flex;
+  background-color: #202027;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  padding: 1em;
+  height: 5em;
+  width: 5em;
+  margin-bottom: 1.2em;
+  margin-top: 1em;
 }
 
-.icons{
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
-    height: 2rem;
-    width: 2rem;
-    margin-top: 1rem;
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  height: 2rem;
+  width: 2rem;
+  margin-top: 1rem;
 }
 
-.text{
-    color: #FFFFFF;
-    background: none;
-    font-size: 1rem;
-    margin-bottom: 1rem;
+.text {
+  color: #ffffff;
+  background: none;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
