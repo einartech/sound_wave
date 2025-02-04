@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React from "react";
-import Home from "../pageHome/Home";
-import Discover from "../pageDiscover/Discover";
-import Join from "../pageJoin/Join";
+import Home from "../../pages/pageHome/Home";
+import Discover from "../../pages/pageDiscover/Discover";
+import Join from "../../pages/pageJoin/Join";
 import "../../../src/index.css";
 
 

@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "../header/Header";
+import Header from "../../components/header/Header";
 import cover from "../../assets/images/covers.jpg";
-import Icons from "../Icons/Icons";
-import H2Title from "../title2/h2Title";
-import PlainText from "../PlainText/PlainText";
+import Features from "../../components/features/Features";
+import H2Title from "../../components/title2/h2Title";
+import PlainText from "../../components/plainText/PlainText";
 import iconsMic from "../../assets/images/microphone.svg";
 import iconsAlbum from "../../assets/images/albums.svg";
 import iconsMore from "../../assets/images/more.svg";
-import Footer from "../Footer/Footer";
+import Footer from "../../components/footer/Footer";
 
 
 
@@ -79,11 +79,11 @@ const Discover = () => {
     <Header />
     <DiscoverSection>
     <LeftSection>
-      <H2Title text="Discover new music" />
+      <H2Title text="Discover new music" />11
       <IconsContainer>
-      <Icons img={iconsMic} text="Charts" alt="microphone icon" />
-      <Icons img={iconsAlbum} text="Albums" alt="albums icon" />
-      <Icons img={iconsMore} text="More" alt="more icon" />
+      <Features img={iconsMic} text="Charts" alt="microphone icon" />
+      <Features img={iconsAlbum} text="Albums" alt="albums icon" />
+      <Features img={iconsMore} text="More" alt="more icon" />
       </IconsContainer>
       <PlainText text="By joining you can benefit by listening to the latest albums released." />
       </LeftSection>

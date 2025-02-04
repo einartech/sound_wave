@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Form from "../Form/Form";
-import Header from "../header/Header";
-import Footer from "../Footer/Footer";
+import Form from "../../components/form/Form";
+import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
 
 const MainDiv = styled.section`
   display: flex;
@@ -89,17 +89,19 @@ const LeftSection = styled.div`
   padding-left: 100px;
 
   @media (max-width: 768px) {
-    padding-left: 0;
-    text-align: center;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 `;
 
 const RightSection = styled.div`
-  flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding-right: 100px;
+  padding-right: 25%;
+
 
   @media (max-width: 768px) {
     display: flex;

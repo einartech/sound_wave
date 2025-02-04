@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import girlImage from "../../assets/images/landing-page-girl.png";
-import Header from "../header/Header";
+import Header from "../../components/header/Header";
 
 
 const GirlSection = styled.section`
